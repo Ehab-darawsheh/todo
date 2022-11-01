@@ -33,7 +33,7 @@ function App(props) {
     <div className="App">
       <h1>Todo App</h1>
       <form>
-        <FormControl>
+        <FormControl >
           <InputLabel>Write a todo</InputLabel>
           <Input value={input} onChange={(e) => setInput(e.target.value)} />
         </FormControl>
@@ -47,7 +47,7 @@ function App(props) {
           Add Todo
         </Button>
       </form>
-      <ul>
+      <ul className="text">
         {todos.map((todo) => (
           <Todo todo={todo} />
         ))}
